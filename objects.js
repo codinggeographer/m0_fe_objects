@@ -15,32 +15,55 @@ var foods = {
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
 
-var foods = {tacos: 10, pizza: 20, pasta: 30, sushi: 40
+var foods = {
+  tacos: 10, 
+  pizza: 20, 
+  pasta: 30, 
+  sushi: 40
 }
 
 console.log(Object.keys(foods));
 
-
+// prints tacos, pizza, pasta, sushi
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
 
-var foods = {tacos: 10, pizza: 20, pasta: 30, sushi: 40}
-var values = Object.values(foods);
-console.log(values);
+var foods = {
+  tacos: 10, 
+  pizza: 20, 
+  pasta: 30, 
+  sushi: 40
+}
+
+console.log(Object.values(foods));
+
+// prints 12,20,30,40
 
 // // Write code that prints the value of the second food of the foods variable 
 // // you created above:
 
-var foods = {tacos: 10, pizza: 20, pasta: 30, sushi: 40}
-var secondFood = "pizza";
-console.log(secondFood);
+var foods = {
+  tacos: 10, 
+  pizza: 20, 
+  pasta: 30, 
+  sushi: 40
+}
+
+console.log(foods.pizza);
 
 // prints "pizza"
 
 // // Write code that adds a food to the foods object. 
 // // Then, print the updated object:
-var foods = {tacos: 10, pizza: 20, pasta: 30, sushi: 40}
+
+var foods = {
+  tacos: 10, 
+  pizza: 20, 
+  pasta: 30, 
+  sushi: 40
+}
+
  foods.wings = 50;
  console.log(foods);
  
@@ -60,33 +83,54 @@ var email = {
   recipient: "Roberto",
   senderEmail: "nosorio@uccs.edu",
   recipientEmail: "elazteca@yahoo.com",
-  message: "Let's grab some tacos nd margs!"
-};
+  subject: "Lunch?",
+  message: "Let's grab some tacos and margs!"
+
+}
 
 
 // // Write code that logs your email object to the terminal.
 
-function emailObject(obj) {
-  var emailKeys = Object.keys(obj);
-  var emailValues = Object.values(obj);
+var email = {
+  sender: "Natalie",
+  recipient: "Roberto",
+  senderEmail: "nosorio@uccs.edu",
+  recipientEmail: "elazteca@yahoo.com",
+  subject: "Lunch?",
+  message: "Let's grab some tacos and margs!"
 
-  for (var i = 0; i < emailKeys.length; i++) {
-    console.log(`${emailKeys[i]}; ${emailValues(obj)}`);
-
-  }
 }
 
-logEmailObject(email);
+console.log(email);
+
 
 // // Write code that logs all of the 'keys' of the email object 
 // // you created above:
 
-printObjectKeys(email);
+var email = {
+  sender: "Natalie",
+  recipient: "Roberto",
+  senderEmail: "nosorio@uccs.edu",
+  recipientEmail: "elazteca@yahoo.com",
+  subject: "Lunch?",
+  message: "Let's grab some tacos and margs!"
+}
+
+console.log(Object.keys(email));
 
 // // Write code that logs all of the 'values' of the email object 
 // // you created above:
 
-printObjectValues(email);
+var email = {
+  sender: "Natalie",
+  recipient: "Roberto",
+  senderEmail: "nosorio@uccs.edu",
+  recipientEmail: "elazteca@yahoo.com",
+  subject: "Lunch?",
+  message: "Let's grab some tacos and margs!"
+}
+
+console.log(Object.values(email));
 
 // // -------------------
 // // Part 3: Many Emails - CHALLENGE!
@@ -139,26 +183,29 @@ printObjectValues(email);
 
 var emails = [
   {
-      sender: "Natalie",
-      recipient: "Roberto",
-      senderEmail: "nosorio@uccs.edu",
-      recipientEmail: "elazteca@yahoo.com",
-      message: "Let's grab some tacos nd margs!",
+    sender: "Natalie",
+    recipient: "Roberto",
+    senderEmail: "nosorio@uccs.edu",
+    recipientEmail: "elazteca@yahoo.com",
+    subject: "Breakfast?",
+    message: "Let's grab some coffee!"
   }, 
 { 
-      sender: "Natalie",
-      recipient: "Roberto",
-      senderEmail: "nosorio@uccs.edu",
-      recipientEmail: "elazteca@yahoo.com",
-      message: "Let's grab some tacos nd margs!",
+    sender: "Natalie",
+    recipient: "Roberto",
+    senderEmail: "nosorio@uccs.edu",
+    recipientEmail: "elazteca@yahoo.com",
+    subject: "Lunch?",
+    message: "Let's grab some pizza!"
     },
         {
    
-      sender: "Natalie",
-      recipient: "Roberto",
-      senderEmail: "nosorio@uccs.edu",
-      recipientEmail: "elazteca@yahoo.com",
-      message: "Let's grab some tacos nd margs!"
+    sender: "Natalie",
+    recipient: "Roberto",
+    senderEmail: "nosorio@uccs.edu",
+    recipientEmail: "elazteca@yahoo.com",
+    subject: "Dinner?",
+    message: "Let's grab some tacos and margs!"
     },
 
 ];
